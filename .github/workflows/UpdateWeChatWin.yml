@@ -17,5 +17,5 @@ jobs:
       - uses: actions/checkout@v2
       - name: Check new version and push
         env: 
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          GHTOKEN: ${{ secrets.GHTOKEN }}
         run: bash -x ./releaseWeChatWin.sh ${{ github.event.inputs.download_link }}
