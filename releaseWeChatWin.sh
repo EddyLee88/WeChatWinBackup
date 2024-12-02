@@ -22,17 +22,17 @@ function login_gh() {
     echo -e "## \033[1;33mLogin to github to use github-cli...\033[0m"
     printf "#%.0s" {1..60}
 
-    if [ -z $GITHUB_TOKEN ]; then
+    if [ -z $GH_TOKEN ]; then
         >&2 echo -e "\033[1;31mMissing Github Token! Please get a Github Token and set it in Secret\033[0m"
         exit 1
     fi
-    echo $GITHUB_TOKEN > WeChatWin/temp/GITHUB_TOKEN
-    gh auth login --with-token < WeChatWin/temp/GITHUB_TOKEN
+    echo $GH_TOKEN > WeChatWin/temp/GH_TOKEN
+    gh auth login --with-token < WeChatWin/temp/GH_TOKEN
     if [ "$?" -ne 0 ]; then
         >&2 echo -e "\033[1;31mLogin Failed, please check your network or token!\033[0m"
         clean_data 1
     fi
-    rm -rfv WeChatWin/temp/GITHUB_TOKEN
+    rm -rfv WeChatWin/temp/GH_TOKEN
 }
 
 function download_wechat() {
