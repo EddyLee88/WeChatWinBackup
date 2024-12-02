@@ -80,7 +80,6 @@ function clean_data() {
 
 function main() {
     mkdir -p ${temp_path}/temp
-    install_depends
     login_gh
     download_wechat
     now_sum256=`shasum -a 256 ${temp_path}/WeChatWin.exe | awk '{print $1}'`
