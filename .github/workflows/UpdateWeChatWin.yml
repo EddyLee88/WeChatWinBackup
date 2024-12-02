@@ -14,7 +14,7 @@ jobs:
   check_new_version:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: Check new version and push
         env: 
           GHTOKEN: ${{ secrets.GHTOKEN }}
