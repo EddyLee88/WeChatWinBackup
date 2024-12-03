@@ -18,4 +18,4 @@ jobs:
       - name: Check new version and push
         env: 
           GHTOKEN: ${{ secrets.GHTOKEN }}
-        run: bash -x ./releaseWeChatWin.sh ${{ github.event.inputs.download_link }}
+        run: bash -x ./scripts/releaseWeChatWin.sh ${{ github.event.inputs.download_link }}
