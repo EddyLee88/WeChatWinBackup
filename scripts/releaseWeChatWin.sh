@@ -53,6 +53,7 @@ function extract_version() {
     printf "#%.0s" {1..60}
 
     7z x ${temp_path}/WeChatWin.exe -o${temp_path}/temp
+    7z x ${temp_path}/temp/install.7z -o${temp_path}/temp/install
     current_version=`ls -l ${temp_path}/temp/install | awk '{print $9}' | grep '^[0-9]*\.[0-9]*\.[0-9]*\.[0-9]*$'`
 }
 
