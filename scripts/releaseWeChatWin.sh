@@ -6,7 +6,7 @@ temp_path="WeChatWin/temp"
 download_link="$1"
 if [ -z "$1" ]; then
     >&2 echo -e "Missing argument. Using default download link"
-    download_link="https://dldir1v6.qq.com/weixin/Universal/Windows/WeChatWin_4.1.5.exe"
+    download_link="https://dldir1v6.qq.com/weixin/Universal/Windows/WeChatWin_4.1.6.exe"
 fi
 
 function install_depends() {
