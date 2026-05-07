@@ -3,4 +3,6 @@
 
 forked from [wechat-windows-versions](https://github.com/tom-snow/wechat-windows-versions)
 
-[微信4.0插件](https://github.com/afaa1991/BetterWx-UI)
+[微信插件](https://github.com/huiyadanli/RevokeMsgPatcher)
+
+[~~微信4.0插件~~](https://github.com/afaa1991/BetterWx-UI)
